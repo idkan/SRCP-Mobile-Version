@@ -33,7 +33,7 @@ export class HomePage {
 		    	this.router.navigateByUrl('/logged/'+this.username);
 		    }else{
 		    	document.getElementById('answ')['type'] = "Readonly";
-		    	document.getElementById('answ')['value'] = "Verificar usuario o contraseña";
+		    	document.getElementById('answ')['value'] = "¡Ops¡ Verificar usuario o contraseña.";
 		    }
 		    
 		});

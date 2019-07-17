@@ -1,34 +1,44 @@
-<ion-header>
-  <ion-toolbar>
-        <ion-title>SRCMP</ion-title>
-  </ion-toolbar>
-</ion-header>
 
-<ion-content class="background">
 
-    <ion-card>
-    	<ion-card-header>
-    		ACCEDER
-    	</ion-card-header>
-    	
-    	<ion-card-content>
-    		<ion-list no-lines>
-		    	<ion-item>
-		    		<ion-label position="floating">Username</ion-label>
-		    		<ion-input id="username" [(ngModel)]="username"></ion-input>
-		    	</ion-item>
-		    	<ion-item>
-		    		<ion-label position="floating">Password</ion-label>
-		    		<ion-input id="password" type="password" [(ngModel)]="password"></ion-input>
-		    	</ion-item><br>
-		    </ion-list>
 
-	    	<ion-button color="danger" expand="block" outline (click)="login()">Login</ion-button>
-		    
-		    
-			<ion-input id="answ" placeholder="Respuesta" type="hidden" [(ngModel)]="answer"></ion-input>
-    	</ion-card-content>
-    </ion-card>
+<ion-content fullscreen class="background">
 
-  
+	<h3><b>Sistema de Registro de la Comunidad Profesional</b></h3>
+	
+	<ion-grid>
+		<ion-row justify-content-center>
+				<ion-img id="topImg" src="../../assets/media/Logouvm.png"></ion-img>
+			<ion-col align-self-center size-md="6" size-lg="5" size-xs="12">
+				<div text-center>
+					<h4>Iniciar Sesi&oacute;n</h4>
+				</div>
+				<div padding>
+					<ion-item>
+						<ion-input type="text" placeholder="Usuario"
+						id="username" [(ngModel)]="username"></ion-input>
+					</ion-item>
+	
+					<ion-item>
+						<ion-input type="password" placeholder="Contraseña"
+						id="password" [(ngModel)]="password"></ion-input>
+					</ion-item>
+				</div>
+	
+				<div padding>
+					<ion-button size="large" outline (click)="login()" expand="block">Acceder</ion-button>
+					<ion-input id="answ" placeholder="Iniciando Sesión..." type="hidden" [(ngModel)]="answer"></ion-input>
+				</div>
+			</ion-col>
+
+		</ion-row>
+	</ion-grid>
+
+    
+	<ion-footer>
+			<ion-toolbar>
+				<ion-title class="ion-text-center">Powered by&nbsp;&nbsp;
+					<img src="../../assets/media/LogoNegros.png">
+				</ion-title>
+			</ion-toolbar>
+		</ion-footer>
 </ion-content>
