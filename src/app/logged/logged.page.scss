@@ -1,0 +1,42 @@
+ion-content{
+    
+    h3{
+        text-align: center;
+        text-transform: uppercase;
+        color: #cc0000;
+    }  
+    p{
+        
+        text-align: center;
+    }
+    ion-grid{
+        padding-bottom: 50%;
+        padding-top: 29%;
+        ion-button{
+            height: auto;
+        }
+    }
+    ion-icon{
+        font-size: 64px;
+    }  
+}
+
+
+
+/*----------------------------------------------------------*/
+//  Footer CSS 
+
+ion-footer {
+    margin: 10px 0 7px 0;
+    ion-title {
+      --color: #aaaaaa;
+      font-size: .67em;
+    }
+    .toolbar-title {
+      height: 30px!important;
+    }
+    img {
+      max-width: 7%;
+      vertical-align: middle;
+    }
+  }
