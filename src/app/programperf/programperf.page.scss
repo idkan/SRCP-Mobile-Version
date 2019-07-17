@@ -1,0 +1,21 @@
+ion-button {
+	--background: #cc0000;
+}
+
+/*----------------------------------------------------------*/
+//  Footer CSS 
+
+ion-footer {
+    margin: 10px 0 7px 0;
+    ion-title {
+      --color: #aaaaaa;
+      font-size: .67em;
+    }
+    .toolbar-title {
+      height: 30px!important;
+    }
+    img {
+      max-width: 7%;
+      vertical-align: middle;
+    }
+}
